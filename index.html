@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sürükle Bırak Liste</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.0/Sortable.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Sürüklenebilir Liste</h1>
+        <div class="items">
+            <div class="item">
+                <span class="text">Sürüklenebilir liste-1</span>
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="item">
+                <span class="text">Sürüklenebilir liste-2</span>
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="item">
+                <span class="text">Sürüklenebilir liste-3</span>
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="item">
+                <span class="text">Sürüklenebilir liste-4</span>
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="item">
+                <span class="text">Sürüklenebilir liste-5</span>
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+       
+    </div>
+
+    <script>
+        var list= document.querySelector(".items");
+
+        new Sortable(list,{
+            Animation:500
+        })
+    </script>
+</body>
+</html>
